@@ -1,138 +1,119 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  }
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#</title>
+    <link rel="stylesheet" href="style.css">
+    <script
 
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
+    </head>
+    <script>
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              // sticky navbar on scroll script
+              if(this.scrollY > 20){
+                  $('.navbar').addClass("sticky");
+              }else{
+                  $('.navbar').removeClass("sticky");
+              }
+      </script>
+    <body>
+      <div class="scroll-up-btn">
+          <i class="fas fa-angle-up"></i>
+      </div>
+      <nav class="navbar">
+          <div class="max-width">
+              <div class="logo"><a href="#">Interactive Museum Experience</a></div>
+              <ul class="menu">
+                  <li><a href="augmentedreality.html" class="menu-btn">Augmented Reality Experience</a></li>
+                  <li><a href="#" class="menu-btn">Visit Museum Virtually</a></li>
+                  <li><a href="#" class="menu-btn">About our Team</a></li>
+              </ul>
+              <div class="menu-btn">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+        </nav>
 
-/*Navbar styling*/
-.navbar{
-  position: fixed;
-  width: 100%;
-  padding: 30px 0;
-  background: #45ad03;
-  font-family: arial; san-serif;
-  }
+        <!--Home Section begins-->
+        <section class="home" id="home">
+          <div class="max-width">
+            <div class="home-content" img src="museum-tour/Media/bannertest.jpg" alt="">
+              <div class="text-1">Experience a new way</div>
+              <div class="text-2">to <span>play</span></div>
+              <div class="text-3">at The Children's Museum of Oswego</div>
 
-.navbar.sticky{
-  padding: 30px 0;
-  background: #45ad03;
-}
+              </div>
+              </div>
+              </section>
+            <!--Step by Step Grid-->
+            <h1>The <span> Augmented Reality</span> Experience</h1>
+            <div class="max-width">
+              <div class="grid-container">
+                <div class="grid-item">
+                  <svg width="100" height="100">
+                      <circle cx="50" cy="50" r="25"/>
+                        <animate id="a1" attributeName="fill" from="#45ad03" to="#368703" dur="3s" fill="freeze"/>
+                         <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="22px" font-weight="bold" dy=".3em">1</text>
+                         <h2>Download the App</h2>
+                         <p>lorem ipsum dolor lorem ipsum dolor</p>
+                  </svg>
+                </div>
+                <div class="grid-item">
+                  <svg width="100" height="100">
+                      <circle cx="50" cy="50" r="25"/>
+                        <animate id="a2" attributeName="fill" from="#45ad03" to="#368703" dur="6s" fill="freeze"/>
+                         <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="22px" font-weight="bold" dy=".3em">2</text>
+                         <h2>Scan QR Code</h2>
+                         <p>lorem ipsum dolor lorem ipsum dolor</p>
+                  </svg>
+                </div>
+                <div class="grid-item">
+                  <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="25"/>
+                      <animate id="a3" attributeName="fill" from="#45ad03" to="#368703" dur="9s" fill="freeze"/>
+                       <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="22px" font-weight="bold" dy=".3em">3</text>
+                       <h2>Point and Enjoy!</h2>
+                       <p>lorem ipsum dolor lorem ipsum dolor</p>
+                </svg>
+              </div>
 
-.navbar .max-width{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+              </div>
+              </div>
+              <br>
 
-.navbar .logo a{
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-    margin-left: -75px;
-  }
+              <!--Virtual Section begins-->
+              <section class="home" id="home">
+                <div class="max-width">
+                  <div class="home-content">
+                    <div class="text-1">can't come in person?</div>
+                    <div class="text-2">Visit <span>Virtually!</span></div>
+                    <div class="text-3">Panoramic Exhibit Views</div>
+
+                    </div>
+                    </div>
+                    </section>
+                    <!--Step by Step Grid-->
+                    <h1><span>Virtual</span> Exhibits</h1>
+                    <div class="max-width">
+                      <div class="grid-container">
+                        <div class="grid-item">
+
+                                 <h2>Exhibit 1</h2>
+                                 <p>lorem ipsum dolor lorem ipsum dolor</p>
+
+                        </div>
+                        <div class="grid-item">
+                        <h2>Exibit 2</h2>
+                        <p>lorem ipsum dolor lorem ipsum dolor</p>
+
+                        </div>
+                        <div class="grid-item">
+                        <h2>Exhibit 3</h2>
+                        <p>lorem ipsum dolor lorem ipsum dolor</p>
+                        </div>
 
 
-.navbar .menu li{
-  list-style: none;
-  display: inline-block;
-  color: white;
-}
 
-.navbar .menu li:hover{
-  color: black;
-  transition: all 0.3s;
-}
-
-.navbar .menu li a{
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-}
-/*menu btn*/
-.menu-btn{
-  color: white;
-  font-size: 23px;
-  cursor: pointer;
-}
-
-/*text styling*/
-h1{
-  font-family: arial;
-  font-size: 30px;
-  padding: 50px;
-  text-align: center;
-}
-
-h1 span{
-  color:#45ad03
-}
-
-h2 {
-  font-family: arial;
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-body {
-  font-family: arial;
-  font-size: 16px;
-}
-
-/*All grid container styling*/
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding-bottom: 50px;
-}
-.grid-item {
-  background-color: white;
-  text-align: center;
-  padding: 35px;
-}
-.grid-item:hover{
-  background: #e6ffd6;
-}
-
-/*Home section styling*/
-.home{
-  display: flex;
-  background: #b3b3b3;
-  height: 100vh;
-  color: white;
-  font-family: arial;
-}
-
-.home .max-width{
-  margin: auto 0 auto 40px;
-}
-
-.home .home-content .text-1{
-  font-size: 27px;
-}
-
-.home .home-content .text-2{
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-.text-2 span{
-  color: #45ad03;
-}
-
-.home .home-content .text-3{
-  font-size: 40px;
-  margin: 5px 0;
-}
-
-.home .home-content .text-3 span{
-  color: #45ad03;
-  font-weight: 500;
-}
+    </body>
+    </html>
