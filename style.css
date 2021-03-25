@@ -61,7 +61,36 @@
   color: white;
   font-size: 23px;
   cursor: pointer;
+}
 
+/*text styling*/
+h1{
+  font-family: arial;
+  font-size: 30px;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 span{
+  color:#45ad03
+}
+
+body {
+  font-family: arial;
+  font-size: 16px;
+}
+
+/*All grid container styling*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+
+}
+.grid-item {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /*Home section styling*/
@@ -96,6 +125,36 @@
   color: #45ad03;
   font-weight: 500;
 }
+
+
+/* Product image & text grid CSS */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+}
+/* 2 up image text grid */
+.column-2-up {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column img {
+  width: 100%;
+}
+
+/* 2-up Responsive layout - makes a one column-layout instead of two columns */
+@media screen and (max-width: 600px) {
+.column-2-up {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 /*responsive media query
 @media (max-width: 991px) {
