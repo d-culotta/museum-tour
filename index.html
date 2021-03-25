@@ -1,22 +1,39 @@
-<DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#</title>
     <link rel="stylesheet" href="style.css">
+    <script
 
     </head>
+    <script>
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              // sticky navbar on scroll script
+              if(this.scrollY > 20){
+                  $('.navbar').addClass("sticky");
+              }else{
+                  $('.navbar').removeClass("sticky");
+              }
+      </script>
     <body>
+      <div class="scroll-up-btn">
+          <i class="fas fa-angle-up"></i>
+      </div>
       <nav class="navbar">
-        <section class="max-width">
-          <section class="logo"><a href="#">Interactive Museum Experience</a></section>
-          <ul class="menu">
-            <li>Home<a href="#"></a></li>
-            <li>Visit Museum<a href="#"></a></li>
-            <li>About our Team<a href="#"></a></li>
-            </ul>
-        </section>
+          <div class="max-width">
+              <div class="logo"><a href="#">Interactive Museum Experience</a></div>
+              <ul class="menu">
+                  <li><a href="augmentedreality.html" class="menu-btn">Augmented Reality Experience</a></li>
+                  <li><a href="#" class="menu-btn">Visit Museum Virtually</a></li>
+                  <li><a href="#" class="menu-btn">About our Team</a></li>
+              </ul>
+              <div class="menu-btn">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
         </nav>
 
         <!--Home Section begins-->
