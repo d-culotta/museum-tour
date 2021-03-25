@@ -9,17 +9,21 @@
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
-
 }
 
-  /*Navbar styling*/
+/*Navbar styling*/
 .navbar{
   position: fixed;
   width: 100%;
-  padding: 20px 0;
-  /*background: crimson*/
+  padding: 30px 0;
+  background: crimson;
   font-family: arial; san-serif;
   }
+
+.navbar.sticky{
+  padding: 30px 0;
+  background: crimson;
+}
 
 .navbar .max-width{
   display: flex;
@@ -41,8 +45,9 @@
   color: white;
 }
 
-.navbar .menu li:hover{
-  color:black;
+.navbar .menu li: hover{
+  color: black;
+  transition: all 0.3s;
 }
 
 .navbar .menu li a{
@@ -51,12 +56,19 @@
   font-weight: 500;
   margin-left: 25px;
 }
+/*menu btn*/
+.menu-btn{
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+
+}
 
 /*Home section styling*/
 .home{
   display: flex;
   background: #b3b3b3;
-  height: 75vh;
+  height: 100vh;
   color: white;
   font-family: arial;
 }
@@ -84,3 +96,28 @@
   color: crimson;
   font-weight: 500;
 }
+
+/*responsive media query
+@media (max-width: 991px) {
+  .max-width{
+    padding: 0 50px;
+  }
+
+ .navbar .menu{
+    position: fixed;
+    height: 100vh
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+  }
+}
+  .navbar .menu li{
+    display: block;
+  }
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 0 20px 0;
+    font-size: 25px;
+  }
+}*/
