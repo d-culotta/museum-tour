@@ -54,7 +54,7 @@
 /*Home section styling*/
 .home{
   display: flex;
-  background: 210, 212, 210;
+  background: #b3b3b3;
   height: 75vh;
   color: white;
   font-family: arial;
