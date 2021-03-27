@@ -6,81 +6,6 @@
   }
 
 .max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
-
-/*Navbar styling*/
-.navbar{
-  position: fixed;
-  width: 100%;
-  padding: 30px 0;
-  background: #45ad03;
-  font-family: arial; san-serif;
-  }
-
-.navbar.sticky{
-  padding: 30px 0;
-  background: #45ad03;
-}
-
-.navbar .max-width{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo a{
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
-    margin-left: -75px;
-  }
-
-
-.navbar .menu li{
-  list-style: none;
-  display: inline-block;
-  color: white;
-}
-
-.navbar .menu li:hover{
-  color: black;
-  transition: all 0.3s;
-}
-
-.navbar .menu li a{
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-}
-/*menu btn*/
-.menu-btn{
-  color: white;
-  font-size: 23px;
-  cursor: pointer;
-}
-
-/*text styling*/
-h1{
-  font-family: arial;
-  font-size: 30px;
-  padding: 50px;
-  text-align: center;
-}
-
-h1 span{
-  color:#45ad03
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  }
-
-.max-width {
   max-width: 1400px;
   padding: 0 80px;
   margin: auto;
@@ -92,7 +17,7 @@ h1 span{
   width: 100%;
   padding: 30px 0;
   background: #45ad03;
-  font-family: arial; san-serif;
+font-family: 'Roboto', sans-serif;
   }
 
 .navbar.sticky{
@@ -111,6 +36,7 @@ h1 span{
     font-size: 35px;
     font-weight: 600;
     margin-left: -75px;
+    font-family: 'Roboto Slab', serif;
   }
 
 .navbar .menu li{
@@ -138,8 +64,8 @@ h1 span{
 
 /*text styling*/
 h1{
-  font-family: arial;
-  font-size: 30px;
+font-family: 'Roboto Slab', serif;
+  font-size: 32px;
   padding-top: 50px;
   text-align: center;
 }
@@ -149,14 +75,14 @@ h1 span{
 }
 
 h2 {
-  font-family: arial;
-  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
   padding-bottom: 5px;
   color:#45ad03
 }
 
 body {
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -201,7 +127,7 @@ body {
   display: flex;
   height: 100vh;
   color: white;
-  font-family: arial;
+  font-family: roboto;
   background: url("https://i.ibb.co/v1pQWJ5/20210323-113920.jpg")no-repeat center;
   background-color: #d9d5d2;
 }
@@ -213,13 +139,14 @@ body {
 
 .home .home-content .text-1{
   font-size: 27px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home  .home-content .text-2{
-  font-size: 65px;
+  font-size: 70px;
   font-weight: 600;
   margin-left: -3px;
-
+  font-family: 'Roboto Slab', serif;
 }
 .text-2 span{
   color: #45ad03;
@@ -249,8 +176,9 @@ body {
     }
 
 .home .home-content .text-3{
-  font-size: 27px;
+  font-size: 30px;
   margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home .home-2 .home-content .text-3 span{
