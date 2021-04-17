@@ -107,8 +107,8 @@
 }
 
 /* Augmented Reality section styling */
-.augmented-reality{
-    background-color: #f2f2f0;
+.augmented-reality, .about-museum{
+    background-color: #f4ffed;
 
   }
 
@@ -157,7 +157,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #f2f2f0;
+  background-color: #fafafa;
 
 }
 
@@ -194,7 +194,7 @@ body {
 /*responsive media queries*/
 @media(max-width: 947px) {
   .max-width{
-    padding: 0 50px;
+    padding: 0 40px;
 }
   .menu-btn{
     display: block;
@@ -251,14 +251,19 @@ body {
   align-items: center;
   grid-template-columns: auto;
   width: 100%;
+
 }
   .grid-item {
     text-align: center;
     padding: 15px;
+
+
   }
   .grid-text {
     padding: 5px;
     margin-top: 0px;
     text-align: center;
+    width: 100%;
   }
 }
+
